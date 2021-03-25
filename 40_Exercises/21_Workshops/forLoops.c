@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main (int argc, char *argv[])
-{
-
+{	
+	//Zahlen von 1 bis 100 im Rechteck anzeigen
 	int start = 0;
 	int end = 10;
 	
@@ -15,39 +15,48 @@ int main (int argc, char *argv[])
 		}
 		printf("\n");
 	}
-	/*
-	int start = 1;
-	int end = 729;
 	
-	for( int i = start; i <= end; i = i * 3)
+	
+	//Zahl mal * bis sie 729 ist
+	for( int i = 1; i <= 729; i = i * 3)
 	{
 		printf("%d\n", i);
 	}
-	*/
 	
-	/*
-	int a;
-
-	for( a = 40 ; a >= 25 ; a = a - 1)
+	
+	//Rückwärts zählen von 40 - 25
+	for( int a = 40 ; a >= 25 ; a = a - 1)
 	{
 	printf("%d\n", a);
 	}
-	*/
 	
-	/*
+	
+	//Summe aller Zahlen von 1 - 10:
 	int sum = 0;
-	int start = 40;
-	int end = 25;
 	
-	for( int i = start; i >= end; i++ )
+	
+	for( int i = 1; i <= 10; i++ )
 	{
 		sum = sum + i;
 	
-	/*
-	printf("The sum from %d to %d is equal to %d\n", start, end, sum);
-	
-	printf("%d\n", sum);
 	}
-	*/
+		printf("The sum from %d to %d is equal to %d\n", start, end, sum);
+	
+	//Integer addieren bis zu einem Grenzwert.
+	
+	int summ = 0;
+	int max = 555;
+	
+	for( int i = 1; i >= 1; i++)
+	{
+		summ = summ + i;
+		
+		if(summ > max)
+		{
+			printf("With max. sum %d, the integers from 1 to %d sum to %d\n", max, i, summ);
+			break;	
+		}			
+	}
+	
 	return 0;
 }
