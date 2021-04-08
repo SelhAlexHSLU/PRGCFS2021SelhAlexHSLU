@@ -2,7 +2,7 @@
 
 int main (int argc, char *argv[])
 {	
-	//Zahlen von 1 bis 100 im Rechteck anzeigen
+	//Zahlen von 1 bis 100 im Rechteck anzeigen:
 	int start = 0;
 	int end = 10;
 	
@@ -17,14 +17,14 @@ int main (int argc, char *argv[])
 	}
 	
 	
-	//Zahl mal * bis sie 729 ist
+	//Zahl mal 3 bis sie 729 ist:
 	for( int i = 1; i <= 729; i = i * 3)
 	{
 		printf("%d\n", i);
 	}
 	
 	
-	//Rückwärts zählen von 40 - 25
+	//Rückwärts zählen von 40 - 25:
 	for( int a = 40 ; a >= 25 ; a = a - 1)
 	{
 	printf("%d\n", a);
@@ -42,7 +42,7 @@ int main (int argc, char *argv[])
 	}
 		printf("The sum from %d to %d is equal to %d\n", start, end, sum);
 	
-	//Integer addieren bis zu einem Grenzwert.
+	//Integer addieren bis zu einem Grenzwert:
 	
 	int summ = 0;
 	int max = 555;
@@ -54,7 +54,7 @@ int main (int argc, char *argv[])
 		if(summ > max)
 		{
 			printf("With max. sum %d, the integers from 1 to %d sum to %d\n", max, i, summ);
-			break;	
+			break;	//printf vor break ausführen, nach break wird nichts mehr ausgeführt.
 		}			
 	}
 	
