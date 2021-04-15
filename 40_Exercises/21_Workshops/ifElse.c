@@ -38,7 +38,18 @@ int main (int argc, char *argv[])
 	
 		}
 	}
+	{
+		int zahl1;
+		printf("Insert Number\n");
+		scanf("%d\n", &zahl1);
 	
-	
+		if (zahl1 % 2 == 0)
+		{
+			printf("Straight Number\n");
+		}
+		else
+			printf("Odd Number\n");
+		
+	}
 	return 0;
 }
